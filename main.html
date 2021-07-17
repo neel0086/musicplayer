@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Festive&effect=neon|outline|emboss|shadow-multiple' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayX</title>
+</head>
+
+<body>
+    <div class="animate"></div>
+    
+    <div id="load_bar">
+        <div id="bar"></div>
+        
+      </div>
+      <div class="copyright">
+      <p>&#169;copyright 2021 PlayX</p></div>
+    <div class="container">
+        <div class="atoms" id="particles-js">
+            <canvas class="particles-js-canvas-el" width="0" height="0" style="width: 100%; height: 100%; display: block;"></canvas>
+            
+        </div>
+        <!-- <div class="curve"> -->
+        <div class="upbar">
+            <!-- <span></span> -->
+            <i class="material-icons" id="expand">expand_more</i>
+            <span class="font-effect-outline">Now Playing</span>
+            <i class="material-icons-outlined"></i>
+        </div>
+        <!-- </div> -->
+       
+        <div class="imgarea">
+            <img src="" alt="">                 
+        </div>
+        <div class="detail_song">
+            <p class="name">you are the reason</p>
+            <p class="artist">calcum scott</p>
+        </div>
+        <div class="progress_area">
+            <div class="progress_bar"></div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="end"></span>
+            </div>
+            <audio id="curr_song" src=""></audio>
+        </div>    
+        <div class="controls">
+            <!-- <i class="material-icons">queue_music</i> -->
+            <!-- <p>
+            <svg height="16" width="16" style="transform:scale()">
+                <path d="M5.5 5H10v1.5l3.5-2-3.5-2V4H5.5C3 4 1 6 1 8.5c0 .6.1 1.2.4 1.8l.9-.5C2.1 9.4 2 9 2 8.5 2 6.6 3.6 5 5.5 5zm9.1 1.7l-.9.5c.2.4.3.8.3 1.3 0 1.9-1.6 3.5-3.5 3.5H6v-1.5l-3.5 2 3.5 2V13h4.5C13 13 15 11 15 8.5c0-.6-.1-1.2-.4-1.8z"></path>
+            </svg></p> -->                
+            <i class="material-icons-outlined" id="shuffle">shuffle</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i id="play_pause" class="material-icons">play_arrow</i>
+            </div>            
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="repeat" class="material-icons-outlined">loop</i>
+            <span id="poss"></span>
+        </div>
+         <div class="music_store">
+             <div class="header">
+                 <div class="row">
+                    
+                     <u ><span class="music font-effect-emboss">PlayX</span></u>
+                     <div class="search">
+                        <!-- <nobr> -->
+                     <span class="material-icons-outlined">
+                        search
+                        </span>
+                     <input type="text" placeholder="search" spellcheck="false">
+                    </div>
+                <!-- </nobr> -->
+                 </div>
+                 <!-- <i id="close" class="material-icons">close</i> -->
+                 
+
+             </div>
+             <ul ><!--javascript</li> --></ul>
+             <div class="backfo">
+             <!-- <span class="material-icons">arrow_forward_ios</span> -->
+            </div>
+         </div>
+         
+    </div>
+    <script type="text/javascript" src="javascript/particles.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
+    <script src="javascript/playlist.js"></script>
+    <script src="javascript/functions.js"></script>
+    
+<script>
+        // disable rightclick
+        // document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+        // disable inspect shortcut
+        // document.onkeydown = function (e) {
+        //         return false;
+        // }
+            </script>
+</body>
+</html>
